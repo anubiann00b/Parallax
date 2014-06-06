@@ -1,7 +1,5 @@
-/*
- * Plays "This is Berk" from How to Train your Dragon.
+/* Plays "This is Berk" from How to Train your Dragon.
  * No seriously, plug in a buzzer on pin 1.
- *
  */
 
 #include "simpletools.h" 
@@ -16,7 +14,7 @@
 #define Ab3 207
 #define Db5 554
 
-const int a = 2;
+const int PIN = 1;
 
 const int notes[] = {
   Ab4,2,Bb4,4,Bb4,4,F4,2,Ab4,3,Bb4,1,C5,2,Bb4,4,F4,2,
@@ -33,7 +31,7 @@ int main()
   while (1) {
     int i;
     for (i=0;i<size;i+=2) {
-      freqout(1, speed*notes[i+1], notes[i]);
+      freqout(PIN,speed*notes[i+1],notes[i]);
     }
   }
 }
