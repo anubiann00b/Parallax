@@ -1,3 +1,9 @@
+/*
+ * Plays "This is Berk" from How to Train your Dragon.
+ * No seriously, plug in a buzzer on pin 1.
+ *
+ */
+
 #include "simpletools.h" 
 
 #define Ab4 415
