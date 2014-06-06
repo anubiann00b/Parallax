@@ -29,8 +29,7 @@ const int size = sizeof(notes)/sizeof(notes[0]);
 int main()
 {
   while (1) {
-    int i;
-    for (i=0;i<size;i+=2) {
+    for (int i=0;i<size;i+=2) {
       freqout(PIN,speed*notes[i+1],notes[i]);
     }
   }
