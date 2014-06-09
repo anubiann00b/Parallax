@@ -4,6 +4,9 @@
 
 #include "simpletools.h" 
 
+#define PIN 1
+#define speed 80
+
 #define Ab4 415
 #define Bb4 466
 #define F4  349
@@ -14,8 +17,6 @@
 #define Ab3 207
 #define Db5 554
 
-const int PIN = 1;
-
 const int notes[] = {
   Ab4,2,Bb4,4,Bb4,4,F4,2,Ab4,3,Bb4,1,C5,2,Bb4,4,F4,2,
   Ab4,3,Bb4,1,C5,2,Bb4,2,Ab4,2,F4,2,Eb4,2,D4,2,Eb4,2,
@@ -23,7 +24,7 @@ const int notes[] = {
   Ab4,2,Bb4,4,Bb4,4,F4,2,Ab4,3,Bb4,1,Db5,2,Bb4,4,F4,2,
   Bb4,2,Bb4,2,Ab4,2,F4,2,F4,2,Eb4,2,Bb3,2,Bb3,2,Ab3,2,Bb3,6
 };
-const int speed = 80;
+
 const int size = sizeof(notes)/sizeof(notes[0]);
 
 int main()
